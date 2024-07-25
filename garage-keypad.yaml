@@ -1,0 +1,35 @@
+esphome:
+  name: garage-keypad
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  platform: esphome
+  password: 
+
+wifi:
+  ssid: "YOUR_SSID"
+  password: "YOUR_PASSWORD"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Garage-Keypad Fallback Hotspot"
+    password: "FALLBACK_PASSWORD"
+
+captive_portal:
+
+
+wiegand:
+  - id: mykeypad
+    d0: D1
+    d1: D2
+    on_tag:
+      then:
+        - homeassistant.tag_scanned: !lambda 'return x;'
