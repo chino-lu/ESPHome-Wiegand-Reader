@@ -17,7 +17,7 @@
 
 <h2>Installation 🚀</h2>
 <ol>
-<li><strong>Install ESPHome:</strong> Follow the official ESPHome installation instructions: [invalid URL removed]</li>
+<li><strong>Install ESPHome:</strong> Follow the official ESPHome installation instructions:</li>
 <li><strong>Create a new project:</strong> Use the ESPHome CLI to create a new project directory. 📁</li>
 <li><strong>Copy configuration:</strong> Replace the placeholder values (SSID, password, etc.) in the provided ESPHome configuration file with your specific details. 📝</li>
 <li><strong>Flash the device:</strong> Use the ESPHome CLI to flash the compiled firmware to your D1 Mini board. 🔥</li>
